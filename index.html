@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Good Post</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-rose-50 min-h-screen flex flex-col items-center font-sans text-gray-800">
+
+  <!-- HEADER -->
+  <header class="py-8 text-center">
+    <h1 class="text-4xl font-bold text-amber-800">💌 The Good Post</h1>
+    <p class="text-lg text-gray-600 mt-2">Send a moment of kindness. Share something good today.</p>
+  </header>
+
+  <!-- POSTCARD FORM -->
+  <main class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md mx-auto">
+    <h2 class="text-2xl font-semibold text-amber-700 mb-4">Create Your Postcard</h2>
+    <form class="space-y-4" action="#" method="POST">
+      
+      <!-- SENDER NAME -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Your name (optional)</label>
+        <input type="text" name="sender" class="w-full p-2 mt-1 border border-gray-300 rounded-md focus:ring-amber-400 focus:border-amber-400">
+      </div>
+
+      <!-- RECIPIENT EMAIL -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Recipient's email</label>
+        <input type="email" name="recipient" required class="w-full p-2 mt-1 border border-gray-300 rounded-md focus:ring-amber-400 focus:border-amber-400">
+      </div>
+
+      <!-- MESSAGE -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Your message</label>
+        <textarea name="message" rows="5" placeholder="Write something kind..." class="w-full p-2 mt-1 border border-gray-300 rounded-md focus:ring-amber-400 focus:border-amber-400"></textarea>
+      </div>
+
+      <!-- THEME -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Choose a postcard theme</label>
+        <select name="theme" class="w-full p-2 mt-1 border border-gray-300 rounded-md focus:ring-amber-400 focus:border-amber-400">
+          <option>Gratitude</option>
+          <option>Encouragement</option>
+          <option>Friendship</option>
+          <option>Just Because</option>
+        </select>
+      </div>
+
+      <!-- SEND BUTTON -->
+      <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white py-2 rounded-lg font-semibold transition">
+        Send Postcard 💌
+      </button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center mt-8 text-sm text-gray-500">
+    <p>Created with ❤️ by <strong>The Good Post</strong> – a kindness project for better days.</p>
+  </footer>
+
+</body>
+</html>
